@@ -6,9 +6,9 @@ from flask import Blueprint
 from flask import abort
 from flask import session
 
-from models import User
-from models import Blog
-from models import Comment
+from models.user import User
+from models.blog import Blog
+from models.comment import Comment
 
 # 创建一个 蓝图对象 并且路由定义在蓝图对象中
 # 然后在 flask 主代码中「注册蓝图」来使用

@@ -7,7 +7,7 @@ from flask import Blueprint
 from flask import abort
 from flask import session
 
-from models import User
+from models.user import User
 
 
 # 创建一个 蓝图对象 并且路由定义在蓝图对象中
@@ -29,7 +29,7 @@ def login_view():
     if u is not None:
         username = u.username
         return redirect(url_for('blog.view', username=username))
-    return render_template('user_login.html')
+    return render_template('auth_index.html')
 
 
 @main.route('/user/register', methods=['POST'])

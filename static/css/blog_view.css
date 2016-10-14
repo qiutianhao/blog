@@ -23,7 +23,9 @@ body {
     width: 880px;
     margin: 0 auto;
 }
-
+.content:hover{
+    background-color: lightgray;
+}
 .time {
     margin: 5px;
     font-size: small;
